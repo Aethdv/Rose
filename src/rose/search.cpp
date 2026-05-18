@@ -537,7 +537,7 @@ namespace rose {
 
     // Standpat
     if (static_eval >= beta) {
-      return static_eval;
+      return (static_eval + beta) / 2;
     }
     alpha = std::max(alpha, static_eval);
 
